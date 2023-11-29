@@ -24,10 +24,10 @@ export function create (this: Phaser.Scene)
     speed: 150
   });
 
-  this.add.existing(cirlce);
+  this.add.existing(circle);
   var logo = this.physics.add.existing(circle)
 
-  logo.setVelocity(100, 200);
+  circle.setVelocity(100, 200);
   logo.setBounce(1, 1);
   logo.setCollideWorldBounds(true);
 
